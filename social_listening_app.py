@@ -1,4 +1,3 @@
-
 import streamlit as st
 from textblob import TextBlob
 import tweepy
@@ -6,15 +5,15 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Set up Twitter API keys (replace with your actual keys)
-API_KEY = "your_api_key"
-API_SECRET_KEY = "your_api_secret_key"
+API_KEY = "R9pVhsLoNJGi9vMkBAknqJmLp"
+API_SECRET_KEY = "xQzPR3qbbsrvgPIrR6Pu7oIEl3Aj83NF0pFApE48AUBBUbDJLm"
 ACCESS_TOKEN = "your_access_token"
 ACCESS_TOKEN_SECRET = "your_access_token_secret"
 
 # Authenticate with Twitter API
 def authenticate_twitter():
-    auth = tweepy.OAuthHandler(API_KEY, API_SECRET_KEY)
-    auth.set_access_token(ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
+    auth = tweepy.OAuthHandler(fCYyCW7kK9IUF6Zui4yTB4HULYQ5cUGL03XzQe7dIwe4D)
+    auth.set_access_token(1873830592128966657-Z9oSAPCBVGKiGQ130kNkuaA59UeVW9)
     api = tweepy.API(auth, wait_on_rate_limit=True)
     return api
 
